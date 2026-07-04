@@ -1,6 +1,6 @@
 from mcp.server.fastmcp import FastMCP
 
-mcp =  FastMCP("demo")
+mcp =  FastMCP("calculator")
 
 def add(a:int,b:int)->int:
     return int(a)+int(b)
@@ -8,7 +8,7 @@ def subtract(a:int,b:int)->int:
     return int(a)-int(b)
 def multiply(a:int,b:int)->int:
     return int(a)*int(b)
-def divide(a:int,b:int)->int:
+def divide(a:int,b:int):
     return int(a)/int(b)
 
 mcp.tool()(add)
